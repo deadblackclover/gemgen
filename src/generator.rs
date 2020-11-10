@@ -1,5 +1,5 @@
-use acryl::account::PrivateKeyAccount;
-use acryl::seed::*;
+use gemblockchain::account::PrivateKeyAccount;
+use gemblockchain::seed::*;
 
 pub struct Address {
     pub seed: String,

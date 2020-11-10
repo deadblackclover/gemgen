@@ -1,16 +1,16 @@
-# wallet-generator
+# gemgen
 Address generator in Rust
 
 ## Install
 
-If you have Rust: `cargo install walletgen`
+If you have Rust: `cargo install gemgen`
 
 ## Usage
 
 ```bash
-walletgen 0.1.2
+walletgen 0.1.0
 DEADBLACKCLOVER <deadblackclover@protonmail.com>
-CLI address generator for Acryl or Waves
+CLI address generator for Gem
 
 USAGE:
     walletgen [OPTIONS]
