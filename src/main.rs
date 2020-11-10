@@ -5,8 +5,8 @@ mod generator;
 use generator::*;
 
 fn main() {
-    let matches = App::new("walletgen")
-        .version("0.1.2")
+    let matches = App::new("gemgen")
+        .version("0.1.0")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
         .about("CLI address generator for Gem")
         .arg(
