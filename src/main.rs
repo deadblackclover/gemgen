@@ -8,7 +8,7 @@ fn main() {
     let matches = App::new("walletgen")
         .version("0.1.2")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
-        .about("CLI address generator for Acryl or Waves")
+        .about("CLI address generator for Gem")
         .arg(
             Arg::with_name("count")
                 .short("c")
@@ -28,7 +28,7 @@ fn main() {
     let count_arg = matches.value_of("count").unwrap_or("1");
     let count = count_arg.parse().unwrap();
 
-    let chain_id_arg = matches.value_of("chainID").unwrap_or("A");
+    let chain_id_arg = matches.value_of("chainID").unwrap_or("G");
     let chain_id = chain_id_arg.as_bytes();
 
     for i in 0..count {

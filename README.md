@@ -13,7 +13,7 @@ DEADBLACKCLOVER <deadblackclover@protonmail.com>
 CLI address generator for Gem
 
 USAGE:
-    walletgen [OPTIONS]
+    gemgen [OPTIONS]
 
 FLAGS:
     -h, --help       Prints help information
