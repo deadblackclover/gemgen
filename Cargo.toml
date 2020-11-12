@@ -1,6 +1,6 @@
 [package]
 name = "gemgen"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["DEADBLACKCLOVER <deadblackclover@protonmail.com>"]
 description = "CLI address generator for Gem"
 edition = "2018"

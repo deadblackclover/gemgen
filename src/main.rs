@@ -6,7 +6,7 @@ use generator::*;
 
 fn main() {
     let matches = App::new("gemgen")
-        .version("0.1.0")
+        .version("0.1.1")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
         .about("CLI address generator for Gem")
         .arg(
