@@ -1,14 +1,11 @@
 use clap::{App, Arg};
-
-mod generator;
-
-use generator::*;
+use gemblockchain::GemAddress;
 
 fn main() {
     let matches = App::new("gemgen")
-        .version("0.1.1")
+        .version("0.2.0")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
-        .about("CLI address generator for Gem")
+        .about("CLI address generator for Gem blockchain")
         .arg(
             Arg::with_name("count")
                 .short("c")
@@ -16,29 +13,19 @@ fn main() {
                 .value_name("INT")
                 .help("Sets a address generate count"),
         )
-        .arg(
-            Arg::with_name("chainID")
-                .short("i")
-                .long("chain")
-                .value_name("CHAR")
-                .help("Sets a chainID blockchain"),
-        )
         .get_matches();
 
     let count_arg = matches.value_of("count").unwrap_or("1");
     let count = count_arg.parse().unwrap();
 
-    let chain_id_arg = matches.value_of("chainID").unwrap_or("G");
-    let chain_id = chain_id_arg.as_bytes();
-
     for i in 0..count {
-        let acc = generate(chain_id[0] as u8);
+        let gem = GemAddress::generate(None);
 
         println!("# {}", i + 1);
-        println!("address: {}", acc.address);
-        println!("public key: {}", acc.public_key);
-        println!("private key: {}", acc.private_key);
-        println!("seed: {}", acc.seed);
+        println!("Address: {}", gem.address);
+        println!("Mnemonic phrase: {}", gem.mnemonic_phrase);
+        println!("Mini secret key: {}", gem.mini_secret_key_to_string());
+        println!("Public key: {}", gem.public_key_to_string());
         println!("---------------------------------------------------");
     }
 }

@@ -1,16 +1,16 @@
 [package]
 name = "gemgen"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["DEADBLACKCLOVER <deadblackclover@protonmail.com>"]
-description = "CLI address generator for Gem"
+description = "CLI address generator for Gem blockchain"
 edition = "2018"
 license = "GPL-3.0"
 readme = "README.md"
-homepage = "https://github.com/gemblockchain/gemgen"
-repository = "https://github.com/gemblockchain/gemgen"
+homepage = "https://github.com/deadblackclover/gemgen"
+repository = "https://github.com/deadblackclover/gemgen"
 keywords = ["address", "blockchain", "gem"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 clap = "2.33.0"
-gemblockchain = "0.1.1"
+gemblockchain = "0.2.0"
