@@ -3,7 +3,7 @@ use gemblockchain::GemAddress;
 
 fn main() {
     let matches = App::new("gemgen")
-        .version("0.2.0")
+        .version("0.2.1")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
         .about("CLI address generator for Gem blockchain")
         .arg(

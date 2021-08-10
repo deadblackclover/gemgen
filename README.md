@@ -8,7 +8,7 @@ If you have Rust: `cargo install gemgen`
 ## Usage
 
 ```bash
-gemgen 0.2.0
+gemgen 0.2.1
 DEADBLACKCLOVER <deadblackclover@protonmail.com>
 CLI address generator for Gem blockchain
 
